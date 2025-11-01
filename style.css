@@ -99,7 +99,6 @@ nav {
   transform: scale(1.05);
 }
 
-/* Menu Icon */
 .nav__menu__btn {
   font-size: 1.6rem;
   color: var(--text-dark);
@@ -180,7 +179,6 @@ nav {
   cursor: pointer;
 }
 
-/* Primary button */
 .btn-primary {
   background-color: #db7e05;
   color: #fff;
@@ -313,7 +311,6 @@ nav {
   color: #222;
 }
 
-/* Initially hide part of the text */
 .read-box {
   max-height: 90px; /* show only few lines */
   overflow: hidden;
@@ -392,7 +389,6 @@ nav {
   margin-bottom: 2rem;
 }
 
-/* ✅ States Alignment */
 .presence__states ul {
   display: flex;
   flex-wrap: wrap;
@@ -642,7 +638,6 @@ footer ul li a:hover::after {
   color: #0b3d91;
   transform: translateY(-4px) scale(1.1);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  /* 🔹 Remove underline hover effect for social icons */
 }
 
 
