@@ -68,7 +68,6 @@ ul {
   background-color: #155ab6;
 }
 
-/* Navigation Bar */
 nav {
   position: fixed;
   top: 0;
@@ -80,7 +79,6 @@ nav {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Navbar Layout */
 .nav__header {
   display: flex;
   align-items: center;
@@ -89,7 +87,6 @@ nav {
   margin: auto;
 }
 
-/* Logo */
 .nav__logo img {
   height: 55px;
   width: auto;
@@ -133,10 +130,6 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 
-
-
-/* ---------------- HERO SECTION ---------------- */
-
 .hero {
   position: relative;
   width: 100%;
@@ -144,7 +137,6 @@ nav {
   overflow: hidden;
 }
 
-/* Background full cover */
 .hero__overlay {
   background-image: url("Photos/Truck Image 2 (1).png");
   background-size: cover;        /* ensures full coverage */
@@ -155,7 +147,6 @@ nav {
   position: relative;
 }
 
-/* Dark transparent overlay */
 .hero__overlay::before {
   content: "";
   position: absolute;
@@ -164,7 +155,6 @@ nav {
   z-index: 1;
 }
 
-/* Content area */
 .hero__content {
   position: relative;
   z-index: 2;
@@ -178,9 +168,6 @@ nav {
   padding: 0 8% 60px;
 }
 
-/* ---------------- BUTTON STYLING ---------------- */
-
-/* Button base style */
 .btn {
   display: inline-block;
   padding: 0.9rem 1.8rem;
@@ -205,7 +192,6 @@ nav {
   transform: scale(1.05);
 }
 
-/* Secondary button */
 .btn-secondary {
   background-color: transparent;
   border: 2px solid #db7e05;
@@ -218,7 +204,6 @@ nav {
   transform: scale(1.05);
 }
 
-/* Buttons container */
 .hero__buttons {
   display: flex;
   gap: 1rem;
@@ -424,7 +409,6 @@ nav {
   font-weight: 600;
 }
 
-/* 📍 Adjust Pin Positions */
 .pin.bangalore {
   top: 82%;
   left: 25%;
@@ -497,7 +481,7 @@ nav {
 .contact__form .btn {
   width: 100%;
 }
-/* 🌐 Footer Base */
+
 footer {
   background: linear-gradient(135deg, #0006106a, #315067); /* Gradient blue */
   padding: 3.5rem 1.5rem;
