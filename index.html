@@ -92,62 +92,60 @@
     <a href="#contact" class="btn btn-primary">View All Services</a>
   </section>
 <!-- Solutions Section -->
+
+<!-- Solutions Section -->
 <section class="section__container solutions" id="solutions">
   <h2>Our Solutions</h2>
 
   <div class="solution__grid">
-    
+
     <!-- Transportation -->
     <div class="solution__card">
       <i class="ri-truck-line solution-icon"></i>
       <h4>Transportation</h4>
-      <p>
-        Our extensive and expertly managed transportation network connects every corner of India.
-        We ensure reliable movement across various modes, minimizing transit times and maximizing freight efficiency.
-      </p>
-      <ul>
-        <li><b>Extensive Fleet:</b> A modern and diverse fleet handling LTL (Less Than Truckload) and FTL (Full Truckload) shipments, including specialized cargo.</li>
-        <li><b>Real-Time Visibility:</b> Live tracking of fleets and delivery status updates for total transparency.</li>
-        <li><b>Route Optimization:</b> Data-driven route planning to minimize delivery lead times.</li>
-        <li><b>Last-Mile Reliability:</b> Dedicated management for critical deliveries, ensuring timely service across metros and remote areas.</li>
-        <li><b>Digital Proof of Delivery (POD):</b> 24/7 access to digital PODs via our secure client portal.</li>
-      </ul>
+      <div class="read-box">
+        <p>
+          Our extensive and expertly managed transportation network connects every corner of India.
+          We ensure reliable movement across various modes, minimizing transit times and maximizing freight efficiency.
+          Our transportation services cover full truckload (FTL) and less-than-truckload (LTL) options, supported by advanced tracking technology and data-driven logistics planning for complete transparency.
+          We focus on timely delivery, route optimization, and cost efficiency while ensuring reliable and secure cargo handling.
+        </p>
+      </div>
+      <button class="read-btn">Read More</button>
     </div>
 
     <!-- Warehousing -->
     <div class="solution__card">
       <i class="ri-building-4-line solution-icon"></i>
       <h4>Warehousing</h4>
-      <p>
-        We offer secure, scalable, and technology-driven warehousing facilities across India.
-        Our solutions go beyond storage — optimizing inventory flow and providing complete visibility.
-      </p>
-      <ul>
-        <li><b>Modern Infrastructure:</b> Advanced facilities with high-end security and racking systems.</li>
-        <li><b>Inventory Management:</b> Real-time tracking and control through Warehouse Management Systems (WMS).</li>
-        <li><b>Value-Added Services:</b> Picking, packing, labeling, kitting, and quality checks customized for client needs.</li>
-      </ul>
+      <div class="read-box">
+        <p>
+          We offer secure, scalable, and technology-driven warehousing facilities across India.
+          Our solutions go beyond storage — optimizing inventory flow and providing complete visibility.
+          Equipped with modern infrastructure and Warehouse Management Systems (WMS), our facilities offer automation, inventory tracking, and value-added services like labeling, packing, and quality checks.
+          We ensure your inventory is safe, organized, and always accessible through real-time updates.
+        </p>
+      </div>
+      <button class="read-btn">Read More</button>
     </div>
 
     <!-- Freight Forwarding -->
     <div class="solution__card">
       <i class="ri-global-line solution-icon"></i>
       <h4>Freight Forwarding</h4>
-      <p>
-        Our freight forwarding solutions ensure global connectivity through efficient air, sea, and land logistics.
-        We manage every step to ensure safe, timely, and compliant deliveries across borders.
-      </p>
-      <ul>
-        <li><b>Global Reach:</b> Strong partnerships with international carriers for seamless shipping.</li>
-        <li><b>Customs Clearance:</b> Hassle-free import/export documentation and clearance support.</li>
-        <li><b>Multimodal Transport:</b> Flexible solutions combining sea, air, and land routes.</li>
-        <li><b>End-to-End Tracking:</b> Real-time shipment visibility with proactive updates.</li>
-      </ul>
+      <div class="read-box">
+        <p>
+          Our freight forwarding solutions ensure global connectivity through efficient air, sea, and land logistics.
+          We manage every step to ensure safe, timely, and compliant deliveries across borders.
+          With a strong global network of carriers and agents, we handle documentation, customs clearance, and multi-modal transport with ease.
+          Our advanced tracking gives clients real-time shipment visibility, ensuring peace of mind from origin to destination.
+        </p>
+      </div>
+      <button class="read-btn">Read More</button>
     </div>
 
   </div>
 </section>
-
 <section class="section__container presence" id="presence">
   <div class="presence__grid">
     <!-- Left Side: India Map -->
@@ -270,7 +268,21 @@
 
   <!-- JS -->
 <script src="https://js.stripe.com/v3/"></script>
-<script src="main.js"></script>
+<script src="Back-end.js"></script>
+<script>
+document.querySelectorAll(".read-btn").forEach((button) => {
+  button.addEventListener("click", () => {
+    const readBox = button.previousElementSibling;
+    readBox.classList.toggle("expanded");
+
+    if (readBox.classList.contains("expanded")) {
+      button.textContent = "Read Less";
+    } else {
+      button.textContent = "Read More";
+    }
+  });
+});
+</script>
 
 </body>
 </html>
