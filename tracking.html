@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Track Your Shipment | Graphpl Logistics</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="tracking.css" />
+  <link rel="icon" href="favicon.png" />
+</head>
+<body>
+  <section class="tracking-section">
+    <div class="tracking-container">
+      <h1><i class="ri-truck-line"></i> Track Your Shipment</h1>
+      <p>Enter your tracking ID below to view your shipment status.</p>
+
+      <form id="trackingForm" onsubmit="showResult(event)">
+        <input type="text" id="trackingId" placeholder="Enter Tracking ID" required />
+        <button type="submit" class="btn">Track Shipment</button>
+        <img src="Photos/Graph1.jpg" alt="image">
+      </form>
+
+      <div id="trackingResult" class="tracking-result hidden">
+        <h2>Shipment Details</h2>
+        <p><strong>Tracking ID:</strong> <span id="resultId">–</span></p>
+        <p><strong>Status:</strong> <span id="resultStatus">–</span></p>
+        <p><strong>Location:</strong> <span id="resultLocation">–</span></p>
+        <p><strong>Expected Delivery:</strong> <span id="resultDate">–</span></p>
+      </div>
+
+      <a href="index.html" class="back-link"><i class="ri-arrow-left-line"></i> Back to Home</a>
+    </div>
+  </section>
+</body>
+</html>
+
