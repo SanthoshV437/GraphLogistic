@@ -67,6 +67,7 @@ ul {
 .btn-secondary:hover {
   background-color: #155ab6;
 }
+/* Existing nav styling */
 
 nav {
   position: fixed;
@@ -159,6 +160,7 @@ nav {
     content: "\2715"; /* X icon */
   }
 }
+
 
 .hero {
   position: relative;
@@ -294,7 +296,10 @@ nav {
   margin-top: 1rem;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6e9054d (Updated contact form textarea styling for consistent font)
 .solutions {
   background-color: #f9fafc;
   padding: 4rem 2rem;
@@ -342,6 +347,10 @@ nav {
   color: #222;
 }
 
+<<<<<<< HEAD
+=======
+/* Initially hide part of the text */
+>>>>>>> 6e9054d (Updated contact form textarea styling for consistent font)
 .read-box {
   max-height: 90px; /* show only few lines */
   overflow: hidden;
@@ -552,25 +561,29 @@ nav {
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  font-size: 1rem;          
-  font-family: inherit;    
+  font-size: 1rem;          /* 👈 ensures both input and textarea have same font size */
+  font-family: inherit;     /* 👈 keeps same font as rest of page */
   outline: none;
   background-color: #fff;
   box-sizing: border-box;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Same focus effect for both */
 .contact__form input:focus,
 .contact__form textarea:focus {
   border-color: #007bff;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
 }
+
+/* Optional: adjust message box height */
 .contact__form textarea {
   resize: none;
   height: 120px; /* you can change this to 50px for smaller box */
   line-height: 1.4;
 }
 
+/* 🌐 Footer Base */
 footer {
   background: linear-gradient(135deg, #0006106a, #315067); /* Gradient blue */
   padding: 3.5rem 1.5rem;
@@ -613,7 +626,7 @@ footer h4 {
   position: relative;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  text-align: center; /* Center headings */
+  text-align: center; 
 }
 
 footer h4::after {
@@ -621,7 +634,7 @@ footer h4::after {
   position: absolute;
   bottom: -0.4rem;
   left: 50%;
-  transform: translateX(-50%); /* Center underline */
+  transform: translateX(-50%); 
   width: 50px;
   height: 2px;
   background: linear-gradient(90deg, #ffba08, #00b4d8);
@@ -632,13 +645,13 @@ footer p {
   line-height: 1.7;
   font-size: 0.95rem;
   margin-bottom: 0.5rem;
-  text-align: center; /* Center paragraphs */
+  text-align: center; 
 }
 
 footer ul {
   list-style: none;
   padding: 0;
-  text-align: center; /* Center list */
+  text-align: center; 
 }
 
 footer ul li {
@@ -700,8 +713,6 @@ footer ul li a:hover::after {
   display: none !important;
 }
 
-
-/* ⚡ Bottom Bar */
 .footer__bar {
   margin-top: 3rem;
   text-align: center;
