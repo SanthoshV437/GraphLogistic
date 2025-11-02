@@ -521,28 +521,24 @@ nav {
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  font-size: 1rem;        
-  font-family: inherit;     
+  font-size: 1rem;          
+  font-family: inherit;    
   outline: none;
   background-color: #fff;
   box-sizing: border-box;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Same focus effect for both */
 .contact__form input:focus,
 .contact__form textarea:focus {
   border-color: #007bff;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
 }
-
-/* Optional: adjust message box height */
 .contact__form textarea {
   resize: none;
   height: 120px; /* you can change this to 50px for smaller box */
   line-height: 1.4;
 }
-
 
 footer {
   background: linear-gradient(135deg, #0006106a, #315067); /* Gradient blue */
