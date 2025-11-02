@@ -90,3 +90,40 @@ function createBubble() {
 
 setInterval(createBubble, 800);
 
+
+document.querySelectorAll(".read-btn").forEach((button) => {
+  button.addEventListener("click", () => {
+    const readBox = button.previousElementSibling;
+    readBox.classList.toggle("expanded");
+
+    if (readBox.classList.contains("expanded")) {
+      button.textContent = "Read Less";
+    } else {
+      button.textContent = "Read More";
+    }
+  });
+});
+
+document.getElementById('whatsapp-btn').addEventListener('click', function () {
+  var whatsapp_link = "https://wa.me/ 7411034104 "; 
+  window.open(whatsapp_link, '_blank');
+});
+
+const menuBtn = document.getElementById("menu-btn");
+const navLinks = document.getElementById("nav-links");
+
+// Toggle menu open/close
+menuBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+  menuBtn.classList.toggle("open");
+});
+
+// Auto close menu when clicking any link
+document.querySelectorAll("#nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+    menuBtn.classList.remove("open");
+  });
+});
+
+
