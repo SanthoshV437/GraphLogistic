@@ -296,10 +296,6 @@ nav {
   margin-top: 1rem;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 6e9054d (Updated contact form textarea styling for consistent font)
 .solutions {
   background-color: #f9fafc;
   padding: 4rem 2rem;
@@ -347,10 +343,7 @@ nav {
   color: #222;
 }
 
-<<<<<<< HEAD
-=======
 /* Initially hide part of the text */
->>>>>>> 6e9054d (Updated contact form textarea styling for consistent font)
 .read-box {
   max-height: 90px; /* show only few lines */
   overflow: hidden;

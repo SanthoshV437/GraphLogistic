@@ -216,8 +216,7 @@
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <input type="tel" name="phone" placeholder="Your Phone Number" pattern="[0-9]{10}" maxlength="10" required
-        oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,10)"
->
+        oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,10)">
         <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
         <button type="submit" class="btn btn-primary">Send Message</button>
       </form>
@@ -270,8 +269,9 @@
   <!-- JS -->
 <script src="https://js.stripe.com/v3/"></script>
 <script src="Back-end.js"></script>
+
 <script>
-document.querySelectorAll(".read-btn").forEach((button) => {
+  document.querySelectorAll(".read-btn").forEach((button) => {
   button.addEventListener("click", () => {
     const readBox = button.previousElementSibling;
     readBox.classList.toggle("expanded");
@@ -308,9 +308,7 @@ document.querySelectorAll("#nav-links a").forEach(link => {
     menuIcon.classList.add("ri-menu-3-line");
   });
 });
-
 </script>
 </body>
 </html>
-
 
