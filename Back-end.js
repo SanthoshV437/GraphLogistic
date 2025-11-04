@@ -107,4 +107,8 @@ document.querySelectorAll("#nav-links a").forEach(link => {
   });
 });
 
-
+// WhatsApp Button
+document.getElementById('whatsapp-btn').addEventListener('click', function () {
+  var whatsapp_link = "https://wa.me/8867459608"; 
+  window.open(whatsapp_link, '_blank');
+});

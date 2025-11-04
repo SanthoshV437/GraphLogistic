@@ -88,7 +88,8 @@
       <div class="service__card">
         <img src="Photos/Gemini_Generated_Image_ftpnr7ftpnr7ftpn.png" alt="Freight Forwarding">
         <h4>Freight Forwarding</h4>
-        <p>Global logistics solutions for import/export with customs clearance.</p>
+        <p>Global logistics solutions for import/export with customs clearance.</p>Successfully rebased and updated refs/heads/main.
+
       </div>
     </div>
     <a href="#contact" class="btn btn-primary">View All Services</a>
@@ -262,7 +263,7 @@
       <ul class="footer__socials">
         <li><a href="#"><i class="ri-linkedin-fill"></i></a></li>
         <li><a href="#"><i class="ri-instagram-line"></i></a></li>  
-        <li><a href="https://wa.me/7411034104"><i class="ri-whatsapp-fill"></i></a></li>
+         <li><a href="https://wa.me/8867459608" target="_blank" id="whatsapp-btn"><i class="ri-whatsapp-fill"></i></a></li>
         <li><a href="mailto:rajnish.r@grapl.in" target="_blank" id="gmail-btn"><i class="ri-mail-fill"></i></a></li>
 
       </ul>
@@ -316,6 +317,13 @@ document.querySelectorAll("#nav-links a").forEach(link => {
     menuIcon.classList.add("ri-menu-3-line");
   });
 });
+
+// WhatsApp Button
+document.getElementById('whatsapp-btn').addEventListener('click', function () {
+  var whatsapp_link = "https://wa.me/8867459608"; 
+  window.open(whatsapp_link, '_blank');
+});
+
 </script>
 </body>
 </html>
